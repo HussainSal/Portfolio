@@ -1,0 +1,42 @@
+.container {
+
+  display: flex;
+}
+
+.aboutContainer {
+  text-align: start;
+  width: 700px;
+}
+
+.section {
+  height: 95vh;
+}
+
+.typo2{
+  background-image: url(../../assets/color.gif);
+  background-clip: text;
+
+}
+
+.skills {
+  position: relative;
+  bottom: 120px;
+  right: 600px;
+  transition: all 0.2s;
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: 230px 230px;
+  grid-template-rows: repeat(4, 80px);
+}
+
+.card {
+  background-size: cover;
+  background-clip: text;
+  background-image: url(../../assets/color.gif);
+  text-align: start;
+  
+}
+
+

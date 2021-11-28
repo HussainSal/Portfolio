@@ -1,0 +1,39 @@
+
+.container{
+  /* margin: auto; */
+  /* max-width: 1000px; */
+  height: 100vh;
+}
+
+.introContainer{
+margin-left: 150px;
+padding-top: 214px;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+
+}
+
+.demo{
+ position: absolute;
+ display: inline-block;
+}
+
+.name{
+  background-image: url(../../assets/color.gif);
+  background-size: cover;
+  background-clip: text;
+  background-position: 50%;
+  position: relative;
+}
+
+
+.buttonContainer{
+
+  position: fixed;
+  right: 80px;
+  top: 30px;
+  
+
+
+}
