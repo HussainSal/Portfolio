@@ -1,5 +1,5 @@
 import "../../index.css";
-import { Button, Typography } from "@material-ui/core";
+import { Button, ButtonGroup, Link, Typography } from "@material-ui/core";
 import classes from "./Header.module.css";
 import { makeStyles } from "@material-ui/core";
 
@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
-import { Opacity } from "@material-ui/icons";
+
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
 const useStyle = makeStyles({
@@ -26,25 +26,25 @@ const useStyle = makeStyles({
   },
   button: {
     color: "#FFFFFF",
+    cursor: "none",
   },
 });
 
-const mainHandler = ()=>{
-  document.getElementById('mainPage').scrollIntoView({behavior:"smooth"})
+const mainHandler = () => {
+  document.getElementById("mainPage").scrollIntoView({ behavior: "smooth" });
+};
 
-}
+const workHandler = () => {
+  document.getElementById("work").scrollIntoView({ behavior: "smooth" });
+};
 
+const aboutHandler = () => {
+  document.getElementById("aboutPage").scrollIntoView({ behavior: "smooth" });
+};
 
-const aboutHandler = ()=>{
-  document.getElementById('aboutPage').scrollIntoView({behavior:"smooth"})
-
-}
-
-
-const contactHandler = ()=>{
-  document.getElementById('contactPage').scrollIntoView({behavior:"smooth"})
-
-}
+const contactHandler = () => {
+  document.getElementById("contactPage").scrollIntoView({ behavior: "smooth" });
+};
 
 function Header() {
   const style = useStyle();
@@ -105,14 +105,28 @@ function Header() {
     );
   }, []);
 
-
   return (
-    <section id="mainPage" >
+    <section id="mainPage">
       <div className={classes.buttonContainer}>
-        <Button onClick={mainHandler} className={style.button}>work</Button>
-        <Button onClick={aboutHandler} className={style.button}>about</Button>
-        <Button onClick={contactHandler} className={style.button}>contact</Button>
-        <Button className={style.button}>resume</Button>
+        <Button onClick={mainHandler} className={style.button}>
+          home
+        </Button>
+        <Button onClick={workHandler} className={style.button}>
+          work
+        </Button>
+        <Button onClick={aboutHandler} className={style.button}>
+          about
+        </Button>
+        <Button onClick={contactHandler} className={style.button}>
+          contact
+        </Button>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="https://drive.google.com/file/d/13yrhUe014HMxYHII8dEUuchDMesqp0js/view?usp=sharing"
+          target="_blank"
+        >
+          <Button className={style.button}>resume</Button>
+        </Link>
       </div>
       <div className={classes.container}>
         <div className={classes.introContainer}>
@@ -133,18 +147,20 @@ function Header() {
           <Typography
             id="developer"
             variant="subtitle1"
-            className={`${style.typo} ${style.type} ${classes.name}`}
+            className={`${style.typo} ${style.type} `}
           >
             developer + designer 👨‍💻
           </Typography>
 
-          <Typography
-            id="developer2"
-            className={style.typo}
-            variant="subtitle2"
-          >
-            A Passionate Front-end developer
-          </Typography>
+          <div className={classes.frontendText}>
+            <Typography
+              id="developer2"
+              className={style.typo}
+              variant="subtitle2"
+            >
+              A Passionate Front-end developer
+            </Typography>
+          </div>
         </div>
       </div>
     </section>

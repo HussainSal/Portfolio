@@ -1,25 +1,23 @@
-
-.container{
+.container {
   /* margin: auto; */
   /* max-width: 1000px; */
   height: 100vh;
 }
 
-.introContainer{
-margin-left: 150px;
-padding-top: 214px;
-display: flex;
-align-items: flex-start;
-flex-direction: column;
-
+.introContainer {
+  margin-left: 150px;
+  padding-top: 214px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.demo{
- position: absolute;
- display: inline-block;
+.demo {
+  position: absolute;
+  display: inline-block;
 }
 
-.name{
+.name {
   background-image: url(../../assets/color.gif);
   background-size: cover;
   background-clip: text;
@@ -27,13 +25,38 @@ flex-direction: column;
   position: relative;
 }
 
-
-.buttonContainer{
-
+.buttonContainer {
   position: fixed;
-  right: 80px;
-  top: 30px;
-  
+  left: 75%;
+  top: 3%;
+  z-index: 100005;
+}
 
+@media (max-width: 800px) {
+  .buttonContainer {
+    left: 15vw;
+  }
 
+  .introContainer {
+    margin-left: 100px;
+    padding-top: 214px;
+  }
+
+  .buttonContainer {
+    left: 12vw;
+    top: 3%;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttonContainer {
+    left: 4vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .buttonContainer {
+    left: 4vw;
+  }
 }

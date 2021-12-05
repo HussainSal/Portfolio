@@ -9,6 +9,7 @@ import Cursor from "./components/Cursor/Cursor";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 import Contact from "./components/Contact/Contact";
+import Portfolio from "./components/Portfolio/Portfolio";
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <div className="App">
         <Cursor />
         <Header />
+        <Portfolio />
         <Aboutme />
         <Contact />
       </div>

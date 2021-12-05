@@ -36,7 +36,6 @@ const useStyle = makeStyles({
   cardHeader: {
     height: "25px",
   },
- 
 });
 
 const skillsArray = [
@@ -68,7 +67,7 @@ function Aboutme() {
       },
       {
         x: "77vw",
-        y: 70,
+        y: 90,
         duration: 1.5,
         scrollTrigger: "#title",
         scale: 2,
@@ -85,7 +84,7 @@ function Aboutme() {
       },
       {
         x: "52vw",
-        y: 70,
+        y: 95,
         duration: 2.5,
         scrollTrigger: "#author",
         opacity: 1,
@@ -101,7 +100,7 @@ function Aboutme() {
       },
       {
         x: "52vw",
-        y: 70,
+        y: 100,
         duration: 3,
         scrollTrigger: "#aboutme",
         opacity: 1,
@@ -118,7 +117,7 @@ function Aboutme() {
       {
         delay: 0.5,
         x: "0vw",
-        y:150,
+        y: 120,
         duration: 1,
         scrollTrigger: "#aboutme",
         opacity: 1,
@@ -129,11 +128,8 @@ function Aboutme() {
 
   return (
     <section className={classes.section}>
-      <div id='aboutPage' className={classes.container}>
-       
-
+      <div id="aboutPage" className={classes.container}>
         <div className={classes.aboutContainer}>
-      
           <Typography
             id="title"
             variant="h6"
@@ -168,9 +164,8 @@ function Aboutme() {
             <br />
           </Typography>
         </div>
-        <div className={classes.skills}>
+        <div id="skillItem" className={classes.skills}>
           <Typography
-            id="skillItem"
             variant="h2"
             className={`${style.typo1} ${classes.skillHeading}`}
           >
@@ -180,7 +175,7 @@ function Aboutme() {
             {skillsArray.map((cur, id) => {
               return (
                 <Card
-                  id="skillItem"
+                  // id="skillItem"
                   className={`${style.card} ${classes.card}`}
                 >
                   <CardHeader
