@@ -154,7 +154,7 @@ function Contact() {
   }, []);
 
   return (
-    <section>
+    <section className={classes.section}>
       <div id="contactPage" className={classes.container}>
         <Typography id="contactme" variant="h1" className={style.contactme}>
           contact me

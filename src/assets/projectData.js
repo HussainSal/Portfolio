@@ -2,8 +2,19 @@ import project1 from "./projectsImages/project1.png";
 import project2 from "./projectsImages/project2.png";
 // import project3 from "./projectsImages/project3.png";
 import project4 from "./projectsImages/project4.png";
+// import project3 from "./projectsImages/project3.png";
 
 const projectData = [
+  // {
+  //   name: "Movie App",
+  //   description:
+  //     "A movie app made with ReactJs . you can  click on an Actor, and check information about him/her as well as movies that same actor enters. it uses React Router, and fetches the movie based on the URL, so you can easily reload the page and the data will be still fetched. It also uses lazy loading on images,",
+  //   image: project5,
+  //   githubLink: "",
+  //   siteLink:
+  //     "",
+  //   technoUsed: ["ReactJS ", "Redux", " Material-UI", "RestAPI "],
+  // },
   {
     name: "Todo App",
     description:

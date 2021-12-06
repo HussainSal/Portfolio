@@ -13,7 +13,6 @@ import Portfolio from "./components/Portfolio/Portfolio";
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
 function App() {
- 
   return (
     <ThemeProvider theme={theme}>
       <div className="App">

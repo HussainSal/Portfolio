@@ -66,8 +66,8 @@ function Aboutme() {
         Opacity: 0,
       },
       {
-        x: "77vw",
-        y: 90,
+        x: window.innerWidth < "500" ? "75%" : "68vw",
+        y: 60,
         duration: 1.5,
         scrollTrigger: "#title",
         scale: 2,
@@ -83,7 +83,7 @@ function Aboutme() {
         Opacity: 0,
       },
       {
-        x: "52vw",
+        x: window.innerWidth < "500" ? "30%" : "45vw",
         y: 95,
         duration: 2.5,
         scrollTrigger: "#author",
@@ -99,7 +99,7 @@ function Aboutme() {
         opacity: 0,
       },
       {
-        x: "52vw",
+        x: window.innerWidth < "500" ? "5%" : "45vw",
         y: 100,
         duration: 3,
         scrollTrigger: "#aboutme",
@@ -116,7 +116,7 @@ function Aboutme() {
       },
       {
         delay: 0.5,
-        x: "0vw",
+        x: "20vw",
         y: 120,
         duration: 1,
         scrollTrigger: "#aboutme",
@@ -125,6 +125,8 @@ function Aboutme() {
       }
     );
   }, []);
+
+  // const width = window.innerWidth;
 
   return (
     <section className={classes.section}>
@@ -152,15 +154,16 @@ function Aboutme() {
             className={`${style.typo3} `}
           >
             Hello, my name is Salman Mian. <br />
-            I have been learning web development since 6 months and very much
+            I have been learning web development since 6 months
             <br />
-            dedicated to make myself gear up with some professional skills.
+            and very much dedicated to make myself gear up with some
+            professional skills.
             <br />
             I want to learn all the new technologies related to web
             <br />
-            development and want to apply all my knowledge to create something
+            development and want to apply all my knowledge to create
             <br />
-            which can have some positive impact
+            something which can have some positive impact
             <br />
           </Typography>
         </div>
@@ -174,10 +177,7 @@ function Aboutme() {
           <div className={classes.skillList}>
             {skillsArray.map((cur, id) => {
               return (
-                <Card
-                  // id="skillItem"
-                  className={`${style.card} ${classes.card}`}
-                >
+                <Card className={`${style.card} ${classes.card}`}>
                   <CardHeader
                     className={style.cardHeader}
                     title={cur}

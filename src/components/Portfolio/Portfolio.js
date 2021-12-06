@@ -76,13 +76,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className={classes.projectImage}>
-              <img
-                className={classes.img}
-                width="550px"
-                height="300px"
-                src={cur.image}
-                alt=""
-              />
+              <img className={classes.img} src={cur.image} alt="" />
               <div className={classes.projectInfo}>
                 {cur.technoUsed.map((id) => (
                   <Typography variant="h6" id="info" style={{ color: "#FFF" }}>

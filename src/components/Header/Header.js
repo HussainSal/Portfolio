@@ -75,7 +75,7 @@ function Header() {
       },
       {
         opacity: 1,
-        x: "6vw",
+        x: window.innerWidth < 500 ? "5%" : "6vw",
         duration: 2,
         delay: 0.5,
 
@@ -94,7 +94,7 @@ function Header() {
       },
       {
         opacity: 1,
-        x: "1vw",
+        x: window.innerWidth < 500 ? "5%" : "1vw",
         duration: 2,
         delay: 1,
 
@@ -106,7 +106,7 @@ function Header() {
   }, []);
 
   return (
-    <section id="mainPage">
+    <section className={classes.section} id="mainPage">
       <div className={classes.buttonContainer}>
         <Button onClick={mainHandler} className={style.button}>
           home
@@ -130,7 +130,10 @@ function Header() {
       </div>
       <div className={classes.container}>
         <div className={classes.introContainer}>
-          <Typography className={style.typo} variant="body1">
+          <Typography
+            className={`${style.typo} ${classes.hiThere}`}
+            variant="subtitle1"
+          >
             <b> hi there 👋, i'm </b>
           </Typography>
 

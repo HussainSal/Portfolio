@@ -1,3 +1,7 @@
+.section {
+  overflow-x: hidden;
+}
+
 .container {
   /* margin: auto; */
   /* max-width: 1000px; */
@@ -17,6 +21,10 @@
   display: inline-block;
 }
 
+.hiThere {
+  margin-right: 50px;
+}
+
 .name {
   background-image: url(../../assets/color.gif);
   background-size: cover;
@@ -27,7 +35,7 @@
 
 .buttonContainer {
   position: fixed;
-  left: 75%;
+  left: 70vw;
   top: 3%;
   z-index: 100005;
 }
