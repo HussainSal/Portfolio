@@ -4,7 +4,7 @@ import classes from "./Header.module.css";
 import { makeStyles } from "@material-ui/core";
 
 import { gsap } from "gsap";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
@@ -75,7 +75,7 @@ function Header() {
       },
       {
         opacity: 1,
-        x: window.innerWidth < 500 ? "5%" : "6vw",
+        x: window.innerWidth < 500 ? "-10%" : "5vw",
         duration: 2,
         delay: 0.5,
 
@@ -94,7 +94,7 @@ function Header() {
       },
       {
         opacity: 1,
-        x: window.innerWidth < 500 ? "5%" : "1vw",
+        x: window.innerWidth < 500 ? "-17%" : "1vw",
         duration: 2,
         delay: 1,
 
@@ -108,9 +108,14 @@ function Header() {
   return (
     <section className={classes.section} id="mainPage">
       <div className={classes.buttonContainer}>
-        <Button onClick={mainHandler} className={style.button}>
-          home
-        </Button>
+        {Window.innerWidth > 800 ? (
+          <Button onClick={mainHandler} className={style.button}>
+            home
+          </Button>
+        ) : (
+          ""
+        )}
+
         <Button onClick={workHandler} className={style.button}>
           work
         </Button>
@@ -152,7 +157,7 @@ function Header() {
             variant="subtitle1"
             className={`${style.typo} ${style.type} `}
           >
-            developer + designer 👨‍💻
+            frontend developer 👨‍💻
           </Typography>
 
           <div className={classes.frontendText}>

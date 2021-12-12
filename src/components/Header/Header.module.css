@@ -34,24 +34,29 @@
 }
 
 .buttonContainer {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  left: 70vw;
+  right: 80px;
   top: 3%;
   z-index: 100005;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .buttonContainer {
-    left: 15vw;
+    /* left: 55vw; */
+    margin: auto;
   }
+}
 
+@media (max-width: 800px) {
   .introContainer {
     margin-left: 100px;
     padding-top: 214px;
   }
 
   .buttonContainer {
-    left: 12vw;
+    right: 60px;
     top: 3%;
     margin-right: 10px;
   }
@@ -59,12 +64,21 @@
 
 @media (max-width: 500px) {
   .buttonContainer {
-    left: 4vw;
+    right: 20px;
+
+    margin: auto;
   }
 }
 
 @media (max-width: 450px) {
   .buttonContainer {
-    left: 4vw;
+    margin: auto;
+    max-width: 400px;
   }
 }
+
+/* @media (max-width: 360px) {
+  .buttonContainer {
+    display: none;
+  }
+} */

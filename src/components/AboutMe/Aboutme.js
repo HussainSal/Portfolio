@@ -59,23 +59,6 @@ function Aboutme() {
 
   useEffect(() => {
     gsap.fromTo(
-      "#title",
-      {
-        scale: 0.9,
-        x: 0,
-        Opacity: 0,
-      },
-      {
-        x: window.innerWidth < "500" ? "75%" : "68vw",
-        y: 60,
-        duration: 1.5,
-        scrollTrigger: "#title",
-        scale: 2,
-        opacity: 1,
-      }
-    );
-
-    gsap.fromTo(
       "#author",
       {
         scale: 0.9,
@@ -83,7 +66,7 @@ function Aboutme() {
         Opacity: 0,
       },
       {
-        x: window.innerWidth < "500" ? "30%" : "45vw",
+        x: window.innerWidth < "500" ? "50%" : "45vw",
         y: 95,
         duration: 2.5,
         scrollTrigger: "#author",
@@ -124,6 +107,96 @@ function Aboutme() {
         stagger: 1,
       }
     );
+    ScrollTrigger.matchMedia({
+      "(max-width:1900px)": function () {
+        gsap.fromTo(
+          "#title",
+          {
+            scale: 0.9,
+            x: 0,
+            Opacity: 0,
+          },
+          {
+            x: "70vw",
+            y: 60,
+            duration: 1.5,
+            scrollTrigger: "#title",
+            scale: 2,
+            opacity: 1,
+          }
+        );
+      },
+
+      "(max-width:800px)": function () {
+        gsap.to("#title", {
+          x: "50vw",
+          y: 60,
+          duration: 1.5,
+          scrollTrigger: "#title",
+          scale: 2,
+          opacity: 1,
+        });
+
+        gsap.to(
+          "#author",
+
+          {
+            x: "20vw",
+            y: 95,
+            duration: 2.5,
+            scrollTrigger: "#author",
+            opacity: 1,
+          }
+        );
+
+        gsap.to(
+          "#aboutme",
+
+          {
+            x: "20vw",
+            y: 100,
+            duration: 3,
+            scrollTrigger: "#aboutme",
+            opacity: 1,
+          }
+        );
+      },
+
+      "(max-width:500px)": function () {
+        gsap.to("#title", {
+          x: "70vw",
+          y: 60,
+          duration: 1.5,
+          scrollTrigger: "#title",
+          scale: 2,
+          opacity: 1,
+        });
+
+        gsap.to(
+          "#author",
+
+          {
+            x: "10vw",
+            y: 95,
+            duration: 2.5,
+            scrollTrigger: "#author",
+            opacity: 1,
+          }
+        );
+
+        gsap.to(
+          "#aboutme",
+
+          {
+            x: "10vw",
+            y: 100,
+            duration: 3,
+            scrollTrigger: "#aboutme",
+            opacity: 1,
+          }
+        );
+      },
+    });
   }, []);
 
   // const width = window.innerWidth;

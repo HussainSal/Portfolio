@@ -33,6 +33,11 @@ const theme = createTheme({
         fontWeight: "300",
         lineHeight: "25px",
       },
+      "@media (max-width:450px)": {
+        fontSize: "14px",
+        fontWeight: "300",
+        lineHeight: "15px",
+      },
     },
     subtitle1: {
       fontSize: "20px",

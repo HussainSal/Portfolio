@@ -89,44 +89,6 @@ const Portfolio = () => {
           </div>
         );
       })}
-
-      {/* <div className={`${classes.projectContainer} `}>
-                <div className={classes.project}>
-                    <div className={classes.projectDescription}>
-                    <Typography variant='h2' className={style.projectHeading} >{projectData[1].name}</Typography>
-                    <Typography variant='h6' className={style.projectDescription}>{projectData[1].description}</Typography>
-                    </div>
-                </div>
-                <div className={classes.projectImage}>
-                    <img className={classes.img}  width='550px' height='300px' src={projectData[1].image} alt='' />
-                </div>    
-
-            </div> */}
-      {/* <div className={`${classes.projectContainer} `}>
-                <div className={classes.project}>
-                    <div className={classes.projectDescription}>
-                    <Typography variant='h2' className={style.projectHeading} >crypto app</Typography>
-                    <Typography variant='h6' className={style.projectDescription}>A Crypto App made with ReactJs. It fetches information from an API, and displays it in a nice way and also details of any coin .</Typography>
-                    </div>
-                </div>
-                <div className={classes.projectImage}>
-                    <img className={classes.img}  width='550px' height='300px' src={project3} alt='' />
-                </div>    
-
-            </div> */}
-
-      {/* <div className={`${classes.projectContainer} `}>
-                <div className={classes.project}>
-                    <div className={classes.projectDescription}>
-                    <Typography variant='h2' className={style.projectHeading} >crypto app</Typography>
-                    <Typography variant='h6' className={style.projectDescription}>A Crypto App made with ReactJs. It fetches information from an API, and displays it in a nice way and also details of any coin .</Typography>
-                    </div>
-                </div>
-                <div className={classes.projectImage}>
-                    <img className={classes.img}  width='550px' height='300px' src={project4} alt='' />
-                </div>    
-
-            </div> */}
     </section>
   );
 };
