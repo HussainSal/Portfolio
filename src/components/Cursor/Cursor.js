@@ -15,28 +15,7 @@ function Cursor() {
     }, 500);
   }, []);
 
-  return <div className="cursor" ref={mainCursor}> 
-     
-    </div>
-  ;
+  return <div className="cursor" ref={mainCursor}></div>;
 }
 
 export default Cursor;
-
-/* 
- const cursor = document.querySelector(".cursor");
-
-    document.addEventListener("mousemove", (e) => {
-        setTimeout(() => {
-          cursor.style.top = `${e.pageY - 10}px`;
-          cursor.style.left = `${e.pageX - 10}px`;
-        }, 150);
-      });
-
-      document.addEventListener("click", (e) => {
-        cursor.classList.add("expand");
-        setTimeout(() => {
-          cursor.classList.remove("expand");
-        }, 500);
-      });
-*/

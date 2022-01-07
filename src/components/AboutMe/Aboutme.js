@@ -66,7 +66,7 @@ function Aboutme() {
         Opacity: 0,
       },
       {
-        x: window.innerWidth < "500" ? "50%" : "45vw",
+        x: window.innerWidth < "500" ? "50%" : "35vw",
         y: 95,
         duration: 2.5,
         scrollTrigger: "#author",
@@ -82,10 +82,27 @@ function Aboutme() {
         opacity: 0,
       },
       {
-        x: window.innerWidth < "500" ? "5%" : "45vw",
+        x: window.innerWidth < "500" ? "5%" : "35vw",
         y: 100,
         duration: 3,
         scrollTrigger: "#aboutme",
+        opacity: 1,
+      }
+    );
+
+    gsap.fromTo(
+      "#title",
+      {
+        scale: 0.9,
+        x: 0,
+        Opacity: 0,
+      },
+      {
+        x: "58vw",
+        y: 60,
+        duration: 1.5,
+        scrollTrigger: "#title",
+        scale: 2,
         opacity: 1,
       }
     );
@@ -99,7 +116,7 @@ function Aboutme() {
       },
       {
         delay: 0.5,
-        x: "20vw",
+        x: "18vw",
         y: 120,
         duration: 1,
         scrollTrigger: "#aboutme",
@@ -107,26 +124,8 @@ function Aboutme() {
         stagger: 1,
       }
     );
-    ScrollTrigger.matchMedia({
-      "(max-width:1900px)": function () {
-        gsap.fromTo(
-          "#title",
-          {
-            scale: 0.9,
-            x: 0,
-            Opacity: 0,
-          },
-          {
-            x: "70vw",
-            y: 60,
-            duration: 1.5,
-            scrollTrigger: "#title",
-            scale: 2,
-            opacity: 1,
-          }
-        );
-      },
 
+    ScrollTrigger.matchMedia({
       "(max-width:800px)": function () {
         gsap.to("#title", {
           x: "50vw",
@@ -227,7 +226,7 @@ function Aboutme() {
             className={`${style.typo3} `}
           >
             Hello, my name is Salman Mian. <br />
-            I have been learning web development since 6 months
+            I have been learning web development since 1 year
             <br />
             and very much dedicated to make myself gear up with some
             professional skills.

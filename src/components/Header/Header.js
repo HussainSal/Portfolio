@@ -108,26 +108,36 @@ function Header() {
   return (
     <section className={classes.section} id="mainPage">
       {window.innerWidth > 800 ? (
-        <div className={classes.buttonContainer}>
-          <Button onClick={mainHandler} className={style.button}>
-            home
-          </Button>
-          <Button onClick={workHandler} className={style.button}>
-            work
-          </Button>
-          <Button onClick={aboutHandler} className={style.button}>
-            about
-          </Button>
-          <Button onClick={contactHandler} className={style.button}>
-            contact
-          </Button>
-          <Link
-            style={{ textDecoration: "none" }}
-            href="https://drive.google.com/file/d/13yrhUe014HMxYHII8dEUuchDMesqp0js/view?usp=sharing"
-            target="_blank"
-          >
-            <Button className={style.button}>resume</Button>
-          </Link>
+        <div className={classes.navGroup}>
+          <div className={classes.buttonContainer}>
+            <Button size="large" onClick={mainHandler} className={style.button}>
+              home
+            </Button>
+            <Button size="large" onClick={workHandler} className={style.button}>
+              work
+            </Button>
+            <Button
+              size="large"
+              onClick={aboutHandler}
+              className={style.button}
+            >
+              about
+            </Button>
+            <Button
+              size="large"
+              onClick={contactHandler}
+              className={style.button}
+            >
+              contact
+            </Button>
+            <Link
+              style={{ textDecoration: "none", marginTop: "3px" }}
+              href="https://drive.google.com/file/d/13yrhUe014HMxYHII8dEUuchDMesqp0js/view?usp=sharing"
+              target="_blank"
+            >
+              <Button className={style.button}>resume</Button>
+            </Link>
+          </div>
         </div>
       ) : (
         ""

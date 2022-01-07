@@ -13,14 +13,10 @@
 
 .projectContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1100px;
   padding-top: 100px;
-}
-
-.project {
-  margin: auto;
 }
 
 .projectDescription {
@@ -121,5 +117,9 @@
 
   .section {
     margin-bottom: 150px;
+  }
+
+  .project {
+    margin: auto;
   }
 }

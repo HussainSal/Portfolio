@@ -20,6 +20,13 @@ const useStyle = makeStyles({
     color: "#FFF",
     wordSpacing: "5px",
   },
+  visitButton: {
+    animation: "all .3s",
+    "&:hover": {
+      transform: "scale(1.2)",
+      animation: "all .5s",
+    },
+  },
 });
 
 const Portfolio = () => {
@@ -52,10 +59,22 @@ const Portfolio = () => {
                   href={cur.githubLink}
                 >
                   <Button
-                    style={{ color: "#FFF", margin: "20px", cursor: "none" }}
+                    className={style.visitButton}
+                    style={{
+                      transform: "scale(1.2)",
+                      animation: "all .3s",
+                      color: "#FFF",
+                      margin: "20px",
+                      cursor: "none",
+                    }}
                   >
                     <GitHubIcon
-                      style={{ paddingRight: "10px" }}
+                      className={style.visitButton}
+                      style={{
+                        transform: "scale(1.2)",
+                        animation: "all .3s",
+                        paddingRight: "10px",
+                      }}
                       color="secondary"
                     />
                     Code
@@ -68,7 +87,13 @@ const Portfolio = () => {
                 >
                   <Button
                     variant="contained"
-                    style={{ color: "black", margin: "20px", cursor: "none" }}
+                    className={style.visitButton}
+                    style={{
+                      animation: "all .3s",
+                      color: "black",
+                      margin: "20px",
+                      cursor: "none",
+                    }}
                   >
                     visit{" "}
                   </Button>

@@ -36,15 +36,20 @@
 .buttonContainer {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  right: 80px;
-  top: 3%;
+  position: absolute;
+  /* position: fixed; */
+  right: 90px;
+  top: 4%;
   z-index: 100005;
+  /* width: 100vw; */
 }
+
+/* .navGroup {
+  width: 100vw;
+} */
 
 @media (max-width: 900px) {
   .buttonContainer {
-    /* left: 55vw; */
     margin: auto;
   }
 }
