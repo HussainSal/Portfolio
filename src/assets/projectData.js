@@ -2,9 +2,18 @@ import project1 from "./projectsImages/project1.png";
 import project2 from "./projectsImages/project2.png";
 import project3 from "./projectsImages/project3.png";
 import project4 from "./projectsImages/project4.png";
-// import project3 from "./projectsImages/project3.png";
+import project5 from "./projectsImages/project5.png";
 
 const projectData = [
+  {
+    name: "Ecommerce App",
+    description:
+      "An Ecommerce App made with NextJs. User can signup/login and add items to cart and wishlist, then by going to cart can also check total of it and available discount . ",
+    image: project5,
+    githubLink: "https://github.com/HussainSal/ecommerce-app",
+    siteLink: "https://ecommerce-app-zeta.vercel.app/",
+    technoUsed: ["NextJs ", " Material-UI"],
+  },
   {
     name: "Movie App",
     description:
@@ -23,15 +32,16 @@ const projectData = [
     siteLink: "https://todo-using-next-js-and-material-ui.vercel.app/",
     technoUsed: ["NextJS ", "React Router", " Material-UI", "RestAPI "],
   },
-  {
-    name: "Crypto App",
-    description:
-      "A Crypto App made with ReactJs. It fetches information from an API. User can signup/login and check details about the coin they are interested in.",
-    image: project1,
-    githubLink: "https://github.com/HussainSal/Crypto-Project",
-    siteLink: "https://crypto-c7536.web.app/",
-    technoUsed: ["ReactJS ", "Redux", " Material-UI", "RestAPI "],
-  },
+
+  // {
+  //   name: "Crypto App",
+  //   description:
+  //     "A Crypto App made with ReactJs. It fetches information from an API. User can signup/login and check details about the coin they are interested in.",
+  //   image: project1,
+  //   githubLink: "https://github.com/HussainSal/Crypto-Project",
+  //   siteLink: "https://crypto-c7536.web.app/",
+  //   technoUsed: ["ReactJS ", "Redux", " Material-UI", "RestAPI "],
+  // },
   {
     name: "Lasells",
     description:
