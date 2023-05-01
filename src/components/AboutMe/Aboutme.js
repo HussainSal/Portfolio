@@ -98,7 +98,7 @@ function Aboutme() {
         Opacity: 0,
       },
       {
-        x: "58vw",
+        x: "70vw",
         y: 60,
         duration: 1.5,
         scrollTrigger: "#title",
@@ -226,14 +226,14 @@ function Aboutme() {
             className={`${style.typo3} `}
           >
             Hello, my name is Salman Mian. <br />
-            I have been learning web development since 1 year
+            I have been a web developer for the past 2 year
             <br />
             and very much dedicated to make myself gear up with some
             professional skills.
             <br />
-            I want to learn all the new technologies related to web
+            I want to learn all the new technologies related to web and 
             <br />
-            development and want to apply all my knowledge to create
+            mobile development and want to apply all my knowledge to create
             <br />
             something which can have some positive impact
             <br />

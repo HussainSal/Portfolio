@@ -43,7 +43,7 @@ const projectData = [
   //   technoUsed: ["ReactJS ", "Redux", " Material-UI", "RestAPI "],
   // },
   {
-    name: "Lasells",
+    name: "Lasles",
     description:
       "A Landing page made with Nextjs. It is a VPN service provider page that displays various offers and services. ",
     image: project4,

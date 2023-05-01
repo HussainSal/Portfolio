@@ -132,7 +132,7 @@ function Header() {
             </Button>
             <Link
               style={{ textDecoration: "none", marginTop: "3px" }}
-              href="https://drive.google.com/file/d/13yrhUe014HMxYHII8dEUuchDMesqp0js/view?usp=sharing"
+              href="https://drive.google.com/file/d/10tWpk-Yh8rLKUgTqQ-cAHRx8v2s8Y3uI/view?usp=sharing"
               target="_blank"
             >
               <Button className={style.button}>resume</Button>

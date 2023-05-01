@@ -166,7 +166,7 @@ function Contact() {
         <Link
           style={{ textDecoration: "none" }}
           target="_blank"
-          href="https://drive.google.com/file/d/13yrhUe014HMxYHII8dEUuchDMesqp0js/view?usp=sharing"
+          href="https://drive.google.com/file/d/10tWpk-Yh8rLKUgTqQ-cAHRx8v2s8Y3uI/view?usp=sharing"
         >
           <Button
             id="resume"
@@ -223,7 +223,7 @@ function Contact() {
           variant="h5"
           id="copyright"
         >
-          copyright© 2021, salman
+          copyright© {new Date().getFullYear()}, salman
         </Typography>
       </div>
     </section>
